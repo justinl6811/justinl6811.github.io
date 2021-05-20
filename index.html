@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #d20045;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 5px;
+        }
+
+        ul li a .fa {
+            font-size: 40px;
+            color: #333;
+            line-height: 80px;
+            transition: 0.5s;
+            padding-right: 14px;
+        }
+
+        ul li a span {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 30px;
+            color: #333;
+            letter-spacing: 4px;
+            transition: 0.5s;
+        }
+
+        ul li a {
+            text-decoration: none;
+            display: absolute;
+            display: block;
+            width: 210px;
+            height: 80px;
+            background: #fff;
+            text-align: left;
+            padding-left: 20px;
+            transform: rotate(-30deg) skewX(25deg) translate(0,0);
+            box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+        }
+
+        ul li a:before {
+
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            height: 100%;
+            width: 20px;
+            background: #b1b1b1;
+            transform: 0.5s;
+            transform: rotate(0deg) skewX(-45deg);
+
+        }
+
+        ul li a:before {
+
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            height: 100%;
+            width: 20px;
+            background: #b1b1b1;
+            transform: 0.5s;
+            transform: rotate(0deg) skewY(-45deg);
+
+        }
+
+        ul li a:after {
+
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+            height: 20px;
+            width: 100%;
+            background: #b1b1b1;
+            transform: 0.5s;
+            transform: rotate(0deg) skewX(-45deg);
+
+        }
+
+        ul li a:hover {
+
+            transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+            box-shadow: -50px 50px 50px rgba(0,0,0,0.5)
+
+        }
+
+        ul li:hover .fa {
+
+            color: #fff;
+
+        }
+
+        ul li:hover span {
+
+            color: #fff;
+
+        }
+
+        ul li:hover a {
+
+            background: #00ff62;
+
+        }
+
+        ul li:hover a:before {
+
+            background: #00a740;
+
+        }
+
+        ul li:hover a:after {
+
+            background: #00a740;
+
+        }
+
+        .slider {
+            overflow-y: hidden;
+            max-height: 500px; /* approximate max height */
+
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        }
+        .slider.closed {
+            max-height: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+
+        <li>
+
+            <a href="https://www.roblox.com/games/6603480245/Norfield-State-of-Bluedale">
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <span>
+                    - Game
+                </span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="https://www.roblox.com/groups/10268963/State-of-Bluedale">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span>
+                    - Group
+                </span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <span>
+                    - Discord
+                </span>
+            </a>
+
+        </li>
+
+    </ul>
+    
+
+
+</body></html>
